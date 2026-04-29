@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurnitureHub - Premium Furniture Collection</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="FurnitureHub" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#categories" class="nav-link">Categories</a></li>
+                    <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="header-actions">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                    <a href="#" class="cart-btn" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h1>Premium Furniture Collection</h1>
+                    <p>Transform your space with our exquisite furniture designs</p>
+                    <a href="#products" class="cta-btn">Shop Now</a>
+                </div>
+                <img src="images/hero-sofa.jpg" alt="Premium Sofa" class="slide-img">
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h1>Modern Living Room</h1>
+                    <p>Elegant designs for modern living</p>
+                    <a href="#living" class="cta-btn">Explore Living</a>
+                </div>
+                <img src="images/hero-living.jpg" alt="Living Room" class="slide-img">
+            </div>
+        </div>
+        <div class="slider-nav">
+            <span class="nav-dot active" data-slide="0"></span>
+            <span class="nav-dot" data-slide="1"></span>
+        </div>
+    </section>
+
+    <!-- Marquee Scroller -->
+    <section class="marquee-section">
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                ✨ Free Shipping on Orders Over ₹20,000 | 🚚 7-Day Delivery Guarantee
+            </div>
+            <div class="marquee-content">
+                🛠️ Free Installation | 💰 No Cost EMI Available | ⭐ 5000+ Happy Customers
+            </div>
+            <div class="marquee-content">
+                🎉 Lifetime Warranty | 🇮🇳 Made in India | 🌟 Italian Design
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="featured-products section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <p>Our best-selling furniture pieces</p>
+            </div>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products loaded via JS -->
+            </div>
+            <a href="pages/products.html" class="load-more-btn">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="categories section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop by Category</h2>
+                <p>Find perfect furniture for every room</p>
+            </div>
+            <div class="categories-grid">
+                <a href="#" class="category-card living" data-category="living">
+                    <i class="fas fa-couch"></i>
+                    <h3>Living Room</h3>
+                </a>
+                <a href="#" class="category-card bedroom" data-category="bedroom">
+                    <i class="fas fa-bed"></i>
+                    <h3>Bedroom</h3>
+                </a>
+                <a href="#" class="category-card dining" data-category="dining">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Dining</h3>
+                </a>
+                <a href="#" class="category-card office" data-category="office">
+                    <i class="fas fa-chair"></i>
+                    <h3>Office</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="5000">0</div>
+                    <h4>Happy Customers</h4>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10000">0</div>
+                    <h4>Products Sold</h4>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <h4>Cities Served</h4>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="25">0</div>
+                    <h4>Years Experience</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FurnitureHub</h3>
+                    <p>Your trusted partner for premium furniture solutions across India.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Living Room</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                        <li><a href="#">Dining</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> info@furniturehub.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FurnitureHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Shopping Cart</h3>
+                <span class="close-cart" id="closeCart">&times;</span>
+            </div>
+            <div class="cart-body" id="cartBody">
+                <p>Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total: </span>
+                    <span id="cartTotal">₹0</span>
+                </div>
+                <a href="#" class="checkout-btn">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
